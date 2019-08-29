@@ -12,6 +12,6 @@ services:
       # KAFKA_ADVERTISED_HOST_NAME: 192.168.99.100
       KAFKA_ADVERTISED_HOST_NAME: localhost
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_CREATE_TOPICS: "cat:1:1"
+      KAFKA_CREATE_TOPICS: "cat:1:1,dog:1:1" # don't need this but will auto generate these topics on startup that you know your producer/consumers are going to use
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
